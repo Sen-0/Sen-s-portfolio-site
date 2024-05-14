@@ -31,14 +31,21 @@ nav{
 
 .logo{
      width: 100px;
+     border-radius: 50%;
+     box-shadow: 1px greenyellow;
+     cursor: pointer;
+     transition: 1s;
 }
-
+.logo:hover{
+    box-shadow: 0 0 5px greenyellow,
+                0 0 10px greenyellow,
+                0 0 15px greenyellow;
+}
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-
 nav ul li a{
     color: white;
     text-decoration: none;
@@ -127,7 +134,7 @@ nav ul li a:hover::after{
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -148,16 +155,29 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 20px 0;
+    text-decoration: none;
 }
 .tab-contents ul li span{
     color: rgba(64, 255, 0, 0.821);
     font-size: 14px;
+    text-decoration: none;
+}
+.tab-contents ul li span2{
+    color: rgb(223, 255, 175);
+    border-radius: 1px;
+    transition: 0.5s;
+}
+.tab-contents ul li span2:hover{
+    color: greenyellow;
+    text-shadow: 0 0 5px greenyellow;
 }
 .tab-contents{
     display: none;
+    text-decoration: none;
 }
 .tab-contents.active-tab{
     display: block;
+    text-decoration: none;
 }
 /*portfolio*/
 #portfolio{
