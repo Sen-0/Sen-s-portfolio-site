@@ -230,11 +230,14 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: white;
-    transition: background 0.5s;
+    transition: 0.5s ease-in-out;
 }
 .btn:hover{
-    background: greenyellow;
-    color: black;
+    background: black;
+    color: white;
+    box-shadow: 0 0 5px #adff2f,
+                0 0 10px greenyellow,
+                0 0 15px greenyellow;
 }
 /*--------contact-----------*/
 .contact-left{
